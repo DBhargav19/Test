@@ -25,3 +25,8 @@ steps:
     versionType: 'CurrentVersion'
     projectJsonPath: '$(build.sourcesDirectory)\project.json'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'Orch_Conn'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'Test'
