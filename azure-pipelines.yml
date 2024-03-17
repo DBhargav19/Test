@@ -25,7 +25,3 @@ steps:
     versionType: 'CurrentVersion'
     projectJsonPath: '$(build.sourcesDirectory)\project.json'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-- task: UiPathPack@4
-  inputs:
-    versionType: 'CurrentVersion'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
